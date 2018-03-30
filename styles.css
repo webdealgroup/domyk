@@ -490,6 +490,7 @@ a.akciya0:hover, .akciya0 a:hover {text-decoration: underline}
     color: #634419; }
 /*	TOP-MENU
  --------------------------------------------*/
+.slicknav_menu{display:none;}
 .top-menu-wr {
   position: relative;
   height: 70px;
@@ -647,7 +648,6 @@ a.akciya0:hover, .akciya0 a:hover {text-decoration: underline}
     box-shadow: 0 5px 5px #999;    
 }
 #block_preview a {
-
     text-decoration:none;
 }
 
@@ -658,8 +658,16 @@ a.akciya0:hover, .akciya0 a:hover {text-decoration: underline}
 
 .kredit_main h2 {color: #ff2d1e; margin-bottom:0; margin-top: 30px;}
 .kredit_main table {width: 100%;}
-.kredit_main td {width: 33%; text-align: center; vertical-align: top; padding: 5px 5px 15px 5px; font-size: 18px;}
-.kredit_main td strong {font-size: 36px; font-weight: bold; color: #ff2d1e;}
+.kredit_main .td {display:inline-block; vertical-align:top; width:32%; text-align:center;  padding:5px 0 15px 0; font-size:18px;}
+.kredit_main .td strong {font-size: 36px; font-weight: bold; color: #ff2d1e;}
+
+.content_main{
+	font-family: 'roboto_slab-r';
+	font-size: 13pt; 
+	margin-right:20px;
+	text-align: justify;
+	color: #000000;
+}
 
 .preview_zag{
     color: #684123;
@@ -716,8 +724,7 @@ text-decoration:none;
       height: 180px;
    
       background: #fff;
-      display: inline-block;
-      margin-bottom: 12px; }
+      display: inline-block; }
     .cont-block a .spec-title {
       height: 47px;
       display: inline-block;
@@ -1085,7 +1092,6 @@ text-decoration:none;
 /* FOOTER
  --------------------------------------------*/
 .site-footer {
-  height: 229px;
   position: relative;
   clear: both;
   z-index: 1; }
@@ -1093,7 +1099,6 @@ text-decoration:none;
     margin: 0; }
 
 .site-footer-wr {
-  height: 169px;
   width: 981px;
   background-color: #fff;
   -moz-box-shadow: -1px 10px 10px rgba(0, 0, 0, .5);
@@ -1198,12 +1203,9 @@ margin:8px;
 /* SITE-NAME
  --------------------------------------------*/
 .site-name {
-  position: absolute;
-  left: 31px;
-  top: 52px;
   color: #634419;
-
-    font: normal 13px 'roboto_slab-r', Arial, Helvetica, sans-serif;
+  padding:45px 10px 10px 10px;
+  font: normal 13px 'roboto_slab-r', Arial, Helvetica, sans-serif;
 }
 /* COPYRIGHT
  --------------------------------------------*/
@@ -1630,7 +1632,11 @@ h4{font-size:16px;}
 
 .site-wrap-in,.site-header .header-in,.top-menu-wr .top-menu,.mb-block nav.mb-wr,.site-footer-wr{width:768px;}
 
+.site-header{background:rgba(255, 255, 255, 0.48);}
+
 .top-menu-wr .top-menu > li > a {padding:23px 16px 21px; font-size:14px;}
+
+.kredit_main .td strong {font-size:32px;}
 
 .cont-block a{width:49%; margin-right:0; height:auto;}
 	.cont-block a .spec-pic{height:auto;}
@@ -1642,6 +1648,16 @@ h4{font-size:16px;}
 
 @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
 .site-wrap-in,.site-header .header-in,.top-menu-wr .top-menu,.mb-block nav.mb-wr,.site-footer-wr{width:480px;}
+
+.site-wrap{z-index:-2;}
+.site-wrap:after{top:517px;}
+
+.top-adres{position:relative; left:0; top:70px; margin:0 auto; width: 190px;}
+.top-site-phone{position:relative; left:0; right:70px; margin:40px auto 0; padding-left:0;}
+.top-menu-wr{display:none;}
+.slicknav_menu{display:block;}
+
+.content_main{font-size:12pt;}
 
 .site-content-middle{float:none;}
 	.site-content-middle-in{margin:0;}
@@ -1657,6 +1673,10 @@ h4{font-size:16px;}
 .cont-block a{display:block; width:100%;}
 
 .site-content-middle-in {padding: 0 10px 30px 10px;}
+
+.kredit_main .td{display:block; width:100%; text-align:center;}
+
+.content_main{font-size:10pt; margin-right:0px;}
 
 .preimushestva img {width:110px;}
 .preimushestva .single-advice span {font-size: 16px;

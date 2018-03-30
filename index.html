@@ -1,4 +1,6 @@
-
+ 
+ 
+ 
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -12,6 +14,7 @@
 	<meta name="viewport" content="width=device-width">
     <link href="styles.css" rel="stylesheet">
     <link href="css/styles_articles_tpl.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/slicknav.css" />
     <link href='/shared/highslide-4.1.13/highslide.min.css' rel='stylesheet'type='text/css'><!--[if IE 6]>
 <link rel='stylesheet' type='text/css' href='/shared/highslide-4.1.13/highslide-ie6.css'/>
 <![endif]-->
@@ -50,13 +53,6 @@
 <!-- /Yandex.Metrika counter -->
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
-    <script src='/shared/highslide-4.1.13/highslide-full.packed.js' type='text/javascript'></script>
-    <script type='text/javascript'>
-    hs.graphicsDir = '/shared/highslide-4.1.13/graphics/';
-    hs.outlineType = null;
-    hs.showCredits = false;
-    hs.lang={cssDirection:'ltr',loadingText:'Загрузка...',loadingTitle:'Кликните чтобы отменить',focusTitle:'Нажмите чтобы перенести вперёд',fullExpandTitle:'Увеличить',fullExpandText:'Полноэкранный',previousText:'Предыдущий',previousTitle:'Назад (стрелка влево)',nextText:'Далее',nextTitle:'Далее (стрелка вправо)',moveTitle:'Передвинуть',moveText:'Передвинуть',closeText:'Закрыть',closeTitle:'Закрыть (Esc)',resizeTitle:'Восстановить размер',playText:'Слайд-шоу',playTitle:'Слайд-шоу (пробел)',pauseText:'Пауза',pauseTitle:'Приостановить слайд-шоу (пробел)',number:'Изображение %1/%2',restoreTitle:'Нажмите чтобы посмотреть картинку, используйте мышь для перетаскивания. Используйте клавиши вперёд и назад'};
-    </script>
     <script src='js/flowplayer/flowplayer-3.2.9.min.js' type='text/javascript'></script><!-- 46b9544ffa2e5e73c3c971fe2ede35a5 -->
     <link href='shared/s3/css/calendar.css' rel='stylesheet' type='text/css'>
     <script src='shared/s3/js/lang/ru.js' type='text/javascript'></script>
@@ -64,19 +60,13 @@
     <script src='shared/s3/js/widgets.js?v=7' type='text/javascript'></script>
     <script src='shared/s3/js/calendar.packed.js' type='text/javascript'></script>
     <script src='js/feedback/feedback.factory.min.js' type='text/javascript'></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script>
+		$(function(){
+			$('.top-menu-wr').slicknav();
+		});
+	</script>
 
-    <script type='text/javascript'>
-    /*<![CDATA[*/
-    widgets.addOnloadEvent(function() {
-    if (typeof jQuery == 'undefined') {
-        var s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.src = '/shared/s3/js/jquery-1.7.2.min.js';
-        document.body.appendChild(s);
-    }
-    });
-    /*]]>*/
-    </script>
     <script src="g/s3/misc/eventable/0.0.1/s3.eventable.js"></script>
     <script src="g/s3/misc/math/0.0.1/s3.math.js"></script>
     <script src="g/s3/menu/allin/0.0.2/s3.menu.allin.js"></script>
@@ -165,9 +155,8 @@
                        
  <h1>Строительство деревянных домов под ключ</h1>
                      
-                        <div style="text-align: justify;  margin-right:20px;">
-                            <span style="font-family: 'roboto_slab-r', 'times new roman', times; font-size: 13pt; color: #000000;">
-                            <p>У каждого из нас свое видение будущего дома, но при этом все сходятся во мнении, что он должен быть добротным, теплым и уютным. Всеми этими качествами обладают и щитовые дома, возведением которых занимается компания «Домик Строй».</p>
+<div class="content_main">
+<p>У каждого из нас свое видение будущего дома, но при этом все сходятся во мнении, что он должен быть добротным, теплым и уютным. Всеми этими качествами обладают и щитовые дома, возведением которых занимается компания «Домик Строй».</p>
 <h2 style="text-align: center;">Почему выбирают компанию «Домик Строй»:</h2>
 
 <div class="preimushestva">
@@ -179,20 +168,17 @@
 	<div class="single-advice"><img src="http://Domykstroy.ru/images/ico4.png" alt="" /><br /> <span>Собственное<br /> производство </span></div>
 	<div class="single-advice"><img src="http://Domykstroy.ru/images/ico7.png" alt="" /><br /> <span>Выгодный кредит</span></div>
 	<div class="single-advice"><img src="http://Domykstroy.ru/images/ico5.png" alt="" /><br /> <span>Материнский капитал</span></div>
-
 </div>
 
 <div class="kredit_main">
 <h2 style="text-align: center;">Кредитование клиентов от «Альфа Банка»</h2>
-<table>
-<tbody>
-<tr>
-<td><strong>13,5%</strong><br /> Ставка<br /> кредита</td>
-<td><strong>до 5 лет</strong><br /> Срок<br /> кредитования</td>
-<td><strong>0%</strong><br /> Первоначальный<br /> взнос</td>
-</tr>
-</tbody>
-</table>
+
+<div class="kredit-advice">
+	<div class="td"><strong>13,5%</strong><br /> Ставка<br /> кредита</div>
+	<div class="td"><strong>до 5 лет</strong><br /> Срок<br /> кредитования</div>
+	<div class="td"><strong>0%</strong><br /> Первоначальный<br /> взнос</div>
+</div>
+
 </div>
 <p>Получите подробную информацию о приобретении щитовых домов по телефонам: <strong>8 (969) 123-11-21, 8 (969) 123-38-99</strong> или <a href="main/2714.html">на выставочных площадках</a> в Бронницах, Котельниках или в п. Заворово. </p>
 <p><img style="display: block; margin-left: auto; margin-right: auto;" src="images/g1.jpg" alt="" width="590" height="146" /></p>
@@ -237,13 +223,14 @@
 <li>Материалы не токсичны и экологичны;</li>
 <li>Минимальные затраты на внутренние работ из-за отсутствия неровностей на стенах, только небольшие соединительные швы между панелями.</li>
 </ul>
-<p>Для окончательного выбора метода постройки стоит отметить, что щитовой дом под ключ будет стоить дешевле на 30-50%, чем любой кирпичный дом с готовым проектом.</p></span><br>
-                            <br>
+<p>Для окончательного выбора метода постройки стоит отметить, что щитовой дом под ключ будет стоить дешевле на 30-50%, чем любой кирпичный дом с готовым проектом.</p>
+
+<br>
+<br>
                           
-                           
-                          
-                      
-                      </div> </div> </div>
+</div> 
+</div> 
+</div>
                       
                     <aside class="site-content-left">
                   
